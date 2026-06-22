@@ -1,0 +1,12 @@
+# AEGIS ORB-SLAM3 Integration Guide
+
+Because AEGIS requires a custom visualizer to drop 3D holographic tactical markers over network UDP, the base ORB-SLAM3 engine must be modified.
+
+1. Clone and build the standard ORB-SLAM3 repository on your Linux/WSL machine.
+2. Replace the following files in your ORB-SLAM3 directory with the ones provided in this folder:
+   - Replace `Examples/Monocular/mono_webcam.cc`
+   - Replace `src/MapDrawer.cc`
+   - Replace `include/MapDrawer.h`
+   - Modify 'android.yaml' with correct K Matrix Coefficients of your camera
+3. Open your terminal, navigate to the `ORB_SLAM3/build` directory, and recompile:
+   `make -j4`

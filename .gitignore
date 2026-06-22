@@ -1,0 +1,24 @@
+# Python
+aegis/
+__pycache__/
+*.pyc
+venv/
+env/
+
+# AI Models (Do not upload heavy weights!)
+*.pt
+*.onnx
+
+# C++ & ORB-SLAM3 Build Files
+build/
+CMakeCache.txt
+CMakeFiles/
+*.o
+
+# Data & Logs
+*.csv
+*.log
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
